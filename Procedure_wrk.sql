@@ -37,26 +37,4 @@ BEGIN
 **/
 
 
-INSERT INTO [dbo].[WRK_TRANSACOES]
-	(	[Order_ID]
-        ,[Order_Date]
-        ,[Customer_ID]
-        ,[Region]
-        ,[Rep]
-        ,[Item]
-        ,[Units]
-        ,[Unit_Price]
-	)
-SELECT
-
-		[Order ID]
-      ,[Order Date]
-      ,RIGHT('0000000'+[Customer ID],7) Customer_ID
-      ,[Region]
-      ,[Rep]
-      ,[Item]
-      ,[Units]
-      ,[Unit Price]
-FROM [dbo].[RAW_Transacoes_20190609]
-
 END
